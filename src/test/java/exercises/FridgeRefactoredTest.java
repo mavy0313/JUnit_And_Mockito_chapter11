@@ -25,12 +25,6 @@ public class FridgeRefactoredTest {
         fridge.put("ham");
         assertEquals(true, fridge.contains("cheese"));
         assertEquals(true, fridge.contains("ham"));
-        try {
-            fridge.take("sausage");
-            fail("There was no sausage in the fridge!");
-        } catch (NoSuchItemException e) {
-            // ok
-        }
     }
 
     @Test
